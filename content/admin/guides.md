@@ -1,4 +1,57 @@
----
+---GitHub Docs
+Code security/Secret scanning patterns
+Search GitHub Docs
+flutter 
+Secret scanning patterns
+In this article
+About secret scanning patterns
+Supported secrets for partner patterns
+Supported secrets for advanced security
+Supported secrets for push protection
+Further reading
+Lists of supported secrets and the partners that GitHub works with to prevent fraudulent use of secrets that were committed accidentally.
+
+Secret scanning for partner patterns is automatically run on all public repositories. If you have a license for GitHub Advanced Security, you can enable and configure secret scanning for advanced security for any repository owned by an organization. For more information, see "About GitHub Advanced Security."
+
+About secret scanning patterns
+GitHub Enterprise Cloud maintains these different sets of secret scanning patterns:
+
+Partner patterns. Used to detect potential secrets in all public repositories. For details, see "Supported secrets for partner patterns."
+Advanced security patterns. Used to detect potential secrets in repositories with secret scanning enabled. For details, see "Supported secrets for advanced security."
+Push protection patterns. Used to detect potential secrets in repositories with secret scanning as a push protection enabled. For details, see "Supported secrets for push protection."
+Supported secrets for partner patterns
+GitHub Enterprise Cloud currently scans public repositories for secrets issued by the following service providers. For more information about secret scanning for partner patterns, see "About secret scanning for partner patterns."
+
+If access to a resource requires paired credentials, then secret scanning will create an alert only when both parts of the pair are detected in the same file. This ensures that the most critical leaks are not hidden behind information about partial leaks.
+
+Partner	Supported secret
+Adafruit IO	Adafruit IO Key
+Adobe	Adobe Device Token
+Adobe	Adobe Service Token
+Adobe	Adobe Short-Lived Access Token
+Adobe	Adobe JSON Web Token
+Alibaba Cloud	Alibaba Cloud Access Key ID and Access Key Secret pair
+Amazon Web Services (AWS)	Amazon AWS Access Key ID and Secret Access Key pair
+Atlassian	Atlassian API Token
+Atlassian	Atlassian JSON Web Token
+Azure	Azure Active Directory Application Secret
+Azure	Azure Batch Key Identifiable
+Azure	Azure CosmosDB Key Identifiable
+Azure	Azure DevOps Personal Access Token
+Azure	Azure ML Studio (classic) Web Service Key
+Azure	Azure SAS Token
+Azure	Azure Search Admin Key
+Azure	Azure Search Query Key
+Azure	Azure Service Management Certificate
+Azure	Azure SQL Connection String
+Azure	Azure Storage Account Key
+Checkout.com	Checkout.com Production Secret Key
+Checkout.com	Checkout.com Test Secret Key
+Chief	Chief Tools Token
+Clojars	Clojars Deploy Token
+CloudBees CodeShip	CloudBees CodeShip Credential
+Contributed Systems	Contributed Systems Credentials
+Databricks	Databricks Access Token
 title: GitHub Enterprise guides
 shortTitle: Guides
 intro: 'Learn how to increase developer productivity and code quality with {% data variables.product.product_name %}.'
